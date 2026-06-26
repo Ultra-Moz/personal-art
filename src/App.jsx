@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import OutsideScene from "./scenes/OutsideScene";
-import InsideScene from "./scenes/InsideScene";
+import GateScene from "./scenes/GateScene";
+import DoorScene from "./scenes/DoorScene";
 
 const SCENES = {
   outside: OutsideScene,
-  inside: InsideScene,
+  gate:GateScene,
+  door:DoorScene
 };
 
 const App = () => {

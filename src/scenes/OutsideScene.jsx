@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const OutsideScene = ({goTo}) => {
+const OutsideScene = ({ goTo }) => {
+  const [isHovered, setIsHovered] = useState(false)
   return (
-    <div className='bg-red-500'>    <h1 className='text-5xl text-white text-center'>We are currently Outside the house</h1>
-    <div className='mt-24 cursor-pointer bg-green-300 rounded-xl p-3 text-xl text-center ' onClick={()=>{goTo("inside")}}>Click this to go inside</div>
-    </div>
+    <>
+      <img src="/images/outside-scene-bg.png" alt="outside" className="absolute inset-0 w-full h-full" />
+      <img src={isHovered ? '/images/outside-scene-door-opened.png' : '/images/outside-scene-door-closed.png'} className='absolute inset-0 w-full h-full pointer-events-none z-10' />
+      <svg viewBox="0 0 1920 1080" className="absolute inset-0 w-full h-full">
+        <polygon
+          points='770,454 775,809 585,805 581,459'
+          fill="transparent"
+          className="cursor-pointer"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onClick={() => goTo("gate")} />
+      </svg>
+
+
+    </>
 
   )
 }
