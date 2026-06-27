@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import OutsideScene from "./scenes/OutsideScene";
 import GateScene from "./scenes/GateScene";
 import DoorScene from "./scenes/DoorScene";
+import LoungeScene from "./scenes/LoungeScene";
 
 const SCENES = {
   outside: OutsideScene,
   gate: GateScene,
   door: DoorScene,
+  lounge: LoungeScene
 };
 
 const App = () => {
   const [visible, setVisible] = useState(true);
-  const [currentScene, setCurrentScene] = useState("outside");
+  const [currentScene, setCurrentScene] = useState("lounge");
   const [prevScenes, setPrevScenes] = useState([])
 
   const goTo = (sceneId) => {
