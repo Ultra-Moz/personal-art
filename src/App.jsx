@@ -27,15 +27,12 @@ const goBack = () => {
   
   if (prevScenes.length === 0) return;
 
-  
   const lastScene = prevScenes[prevScenes.length - 1];
   const historyCopy = [...prevScenes];
   historyCopy.pop();
 
-  
   setVisible(false);
 
-  
   setTimeout(() => {
     setCurrentScene(lastScene);
     setPrevScenes(historyCopy);
