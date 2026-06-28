@@ -93,7 +93,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
       <svg viewBox="0 0 1920 1080" className="absolute inset-0 w-full h-full">
         <polygon
           points="0,290 85,290 190,900 0,1000"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="kitchen-door"
           onMouseEnter={() => {
@@ -107,7 +107,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="540,360 630,360 626,610 550,600"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="drawing-room"
           onMouseEnter={() => {
@@ -122,7 +122,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="705,639 701,391 861,391 856,633"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="my-room"
           onMouseEnter={() => {
@@ -136,7 +136,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="1556,414 1645,404 1576,734  1516,697"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="parents-room"
           onMouseEnter={() => {
@@ -150,7 +150,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="1763,377 1680,746 1914,730 1917,363"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="brothers-room"
           onMouseEnter={() => {
@@ -164,7 +164,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="1583,738 1918,751 1920,1550 1729,1074 1549,944 1607,808"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           onMouseEnter={() => setHoveredText("Sofa")}
           onMouseLeave={() => setHoveredText(null)}
@@ -172,7 +172,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="930,1078 958,927 1617,960 1718,1079"
-          fill="transparent"
+          fill="#32323270"
           id="table"
           className="cursor-pointer"
           onMouseEnter={() => setHoveredText("Table")}
@@ -180,7 +180,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="527,381  551,611 624,630 632,729 393,889 264,885 174,358"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="tv"
           onMouseEnter={() => setHoveredText("Television")}
@@ -188,7 +188,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="376,175 328,203 334,259 382,295 426,288  442,244 424,202"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="clock"
           onMouseEnter={() => setHoveredText("Clock")}
@@ -196,7 +196,7 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
         />
         <polygon
           points="875,699 1393,730 1421,525 860,505"
-          fill="transparent"
+          fill="#32323270"
           className="cursor-pointer"
           id="dining-table"
           onMouseEnter={() => setHoveredText("Dining Table")}
