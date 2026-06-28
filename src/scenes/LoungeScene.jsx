@@ -102,7 +102,6 @@ const LoungeScene = ({ goTo, setHoveredText }) => {
           }}
           onMouseLeave={() => {
             setHoveredId(null);
-
             setHoveredText(null);
           }}
         />
