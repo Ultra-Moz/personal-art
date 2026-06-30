@@ -17,7 +17,7 @@ const SCENES = {
 const App = () => {
 
   const [visible, setVisible] = useState(true);
-  const [currentScene, setCurrentScene] = useState("lounge");
+  const [currentScene, setCurrentScene] = useState("outside");
   const [prevScenes, setPrevScenes] = useState([]);
   const [hoverText, setHoveredText] = useState(null);
 
