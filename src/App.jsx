@@ -4,6 +4,7 @@ import GateScene from "./scenes/GateScene";
 import DoorScene from "./scenes/DoorScene";
 import LoungeScene from "./scenes/LoungeScene";
 import DrawingRoomScene from "./scenes/DrawingRoomScene";
+import ComputerTableScene from "./scenes/ComputerTableScene";
 
 const SCENES = {
   outside: OutsideScene,
@@ -11,13 +12,14 @@ const SCENES = {
   door: DoorScene,
   lounge: LoungeScene,
   drawingRoom: DrawingRoomScene,
+  computerTable: ComputerTableScene
 };
 
 
 const App = () => {
 
   const [visible, setVisible] = useState(true);
-  const [currentScene, setCurrentScene] = useState("outside");
+  const [currentScene, setCurrentScene] = useState("computerTable");
   const [prevScenes, setPrevScenes] = useState([]);
   const [hoverText, setHoveredText] = useState(null);
 

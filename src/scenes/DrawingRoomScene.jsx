@@ -37,6 +37,7 @@ const HOTSPOTS = [
     id: "computer-table",
     points: "1530,899  1618,641  1642,338 1917,303 1919,1025  1661,1058 ",
     hoverText: "Computer Table",
+    navTarget:"computerTable"
   },
   {
     id: "right-sofas",
